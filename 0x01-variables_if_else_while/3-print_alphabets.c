@@ -1,26 +1,25 @@
 #include <stdio.h>
-#include<stdlib.h>
-
+#include <stdlib.h>
 
 /**
- * main - Prints the alphabets in lowercase except q and e
+ * main - Prints the alphabet in lowercase and then in UPPERCASE
  *
- *
- * Return: Always 0.
+ * Return: Always 0'
  */
-
 
 int main(void)
 {
 	char letter;
 
+
 	for (letter = 'a' ; letter <= 'z' ; letter++)
-	{
-		if (letter != 'e' && letter != 'q')
-			putchar(letter);
-	}
+
+		putchar(letter);
+	for (letter = 'A' ; letter <= 'Z' ; letter++)
+
+		putchar(letter);
 	putchar('\n');
+
 	return (0);
 }
-
 
