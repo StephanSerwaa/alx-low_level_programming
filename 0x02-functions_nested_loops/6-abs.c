@@ -1,0 +1,7 @@
+$ gcc _putchar.c 6-main.c 6-abs.c -o 6-abs
+$ ./6-abs
+1
+0
+1
+98
+$
