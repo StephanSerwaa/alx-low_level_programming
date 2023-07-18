@@ -1,25 +1,28 @@
-$ gcc _putchar.c 8-main.c 8-24_hours.c -o 8-24
-$ ./8-24 | head
-00:00
-00:01
-00:02
-00:03
-00:04
-00:05
-00:06
-00:07
-00:08
-00:09
-$ ./8-24 | tail
-23:50
-23:51
-23:52
-23:53
-23:54
-23:55
-23:56
-23:57
-23:58
-23:59
-$ ./8-24 | wc -l
-1440
+#include "main.h"
+
+/**
+ * jack_bauer - prints every minute of the day of Jack Bauer
+ * starting from 00:00 to 23:59
+ */
+void jack_bauer(void)
+{
+	int i, j;
+
+	i = 0;
+
+	while (i < 24)
+	{
+		j = 0;
+		while (j < 60)
+		{
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+			_putchar(':');
+			_putchar((j / 10) + '0');
+			_putchar((j % 10) + '0');
+			_putchar('\n');
+			j++;
+		}
+		i++;
+	}
+}

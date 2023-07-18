@@ -1,7 +1,16 @@
-$ gcc _putchar.c 6-main.c 6-abs.c -o 6-abs
-$ ./6-abs
-1
-0
-1
-98
-$
+
+#include "main.h"
+
+/**
+ * _abs - computes the absolute value of an integer
+ * @n: the int to check
+ * Return: the absolute value of int
+ */
+int _abs(int n)
+{
+	if (n >= 0)
+	{
+		return (n);
+	}
+	return (-n);
+}
